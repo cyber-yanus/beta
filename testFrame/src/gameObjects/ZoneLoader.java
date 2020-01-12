@@ -13,7 +13,7 @@ public class ZoneLoader {
         valueZones.put("+",new Zone(2,"Н",PropertiesZone.PASSABLE));
         valueZones.put("A",new Zone(2,"А",PropertiesZone.PASSABLE));
         valueZones.put("C",new Zone(2,"З",PropertiesZone.IMPASSABLE));
-        valueZones.put(" ",new Zone(2," П ",PropertiesZone.PASSABLE));
+        valueZones.put(" ",new Zone(2,"П",PropertiesZone.PASSABLE));
     }
 
     public void createZone(String mapValue)

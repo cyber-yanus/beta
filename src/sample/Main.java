@@ -25,6 +25,11 @@ public class Main extends Application {
     {
         MapController.getInstance().loadGameMap(firstGameMap);
 
+        System.out.println("-------------------------\n");
+
+        MapController.getInstance().updateGameMap(1,1);
+
+
         launch(args);
     }
 }
