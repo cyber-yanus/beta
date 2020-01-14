@@ -31,8 +31,11 @@ public class Zone extends ImageView{
 
     public void settingZone(Point coordinate)
     {
-        super.setX(coordinate.x);
-        super.setY(coordinate.y);
+        int coordinateX = coordinate.x * container.getSizeZone();
+        int coordinateY = coordinate.y * container.getSizeZone();
+
+        super.setX(coordinateX);
+        super.setY(coordinateY);
     }
 
 }

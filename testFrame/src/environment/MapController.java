@@ -25,7 +25,7 @@ public class MapController
 
     private MapController()
     {
-        camera = new Camera(1,4);
+        camera = new Camera(4,4);
     }
 
 
@@ -51,11 +51,12 @@ public class MapController
             for(int j = column; j<height; j++)
             {
                 String mapElement = gameMap.getMapElement(i, j);
-                Point coordinateZone = new Point(i,j);
+
+                Point coordinateZone = new Point(j,i);
+
                 Zone newZone = zoneLoader.createZone(mapElement,coordinateZone);
                 zoneList.add(newZone);
             }
-            //System.out.println();
         }
 
         return zoneList;

@@ -10,15 +10,14 @@ public class ZoneLoader {
 
     public ZoneLoader()
     {
-        valueZones.put("+", new Container(20,"gameObjectsImages/test.png",PropertiesZone.PASSABLE));
-       // valueZones.put("A",new Zone(20,"А",PropertiesZone.PASSABLE));
-       // valueZones.put("C",new Zone(20,"З",PropertiesZone.IMPASSABLE));
-       // valueZones.put(" ",new Zone(20,"П",PropertiesZone.PASSABLE));
+        valueZones.put("+", new Container(50,"gameObjectsImages/sky.png",PropertiesZone.PASSABLE));
+        valueZones.put("A",new Container(50,"gameObjectsImages/cloud.png",PropertiesZone.PASSABLE));
+        valueZones.put("C",new Container(50,"gameObjectsImages/soil.png",PropertiesZone.IMPASSABLE));
+        valueZones.put(" ",new Container(50,"gameObjectsImages/emptiness.png",PropertiesZone.PASSABLE));
     }
 
     public Zone createZone(String mapValue, Point coordinateZone)
     {
-        //ошибка: идентичные обьект
         Container zoneContainer = valueZones.get(mapValue);
 
         Zone outZone = new Zone(zoneContainer);
