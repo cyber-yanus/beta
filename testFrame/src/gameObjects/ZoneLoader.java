@@ -1,5 +1,8 @@
 package gameObjects;
 
+import org.w3c.dom.ls.LSOutput;
+
+import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,17 +12,19 @@ public class ZoneLoader {
 
     public ZoneLoader()
     {
-        //возможно это плохой вариант, т.к. если мы склонируем все эти обьекты при взоимодействии с дним клоном мы затроним всех клонов
-        valueZones.put("+",new Zone(2,"Н",PropertiesZone.PASSABLE));
-        valueZones.put("A",new Zone(2,"А",PropertiesZone.PASSABLE));
-        valueZones.put("C",new Zone(2,"З",PropertiesZone.IMPASSABLE));
-        valueZones.put(" ",new Zone(2,"П",PropertiesZone.PASSABLE));
+        valueZones.put("+",new Zone(20,"gameObjectsImages/test.png",PropertiesZone.PASSABLE));
+       // valueZones.put("A",new Zone(20,"А",PropertiesZone.PASSABLE));
+       // valueZones.put("C",new Zone(20,"З",PropertiesZone.IMPASSABLE));
+       // valueZones.put(" ",new Zone(20,"П",PropertiesZone.PASSABLE));
     }
 
-    public void createZone(String mapValue)
+    public Zone createZone(String mapValue, Point coordinateZone)
     {
+        //ошибка: идентичные обьекты
         Zone outZone = valueZones.get(mapValue);
-        outZone.drawZone();
+        outZone.settingZone(coordinateZone);
+
+        return outZone;
     }
 
 }

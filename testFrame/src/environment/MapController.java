@@ -1,6 +1,12 @@
 package environment;
 
+import gameObjects.Zone;
 import gameObjects.ZoneLoader;
+import javafx.scene.image.ImageView;
+
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MapController
 {
@@ -9,6 +15,7 @@ public class MapController
     private GameMap presentGameMap;
 
     private ZoneLoader zoneLoader = new ZoneLoader();
+    private List<ImageView> zoneList = new ArrayList<>();
 
     private static MapController mapController;
 
@@ -18,7 +25,7 @@ public class MapController
 
     private MapController()
     {
-        camera = new Camera(5,4);
+        camera = new Camera(1,4);
     }
 
 
@@ -32,7 +39,7 @@ public class MapController
      * метод загрузки карты
      * @param gameMap карта которую мы загружаем
      */
-    public void loadGameMap(GameMap gameMap)
+    public List<ImageView> loadGameMap(GameMap gameMap)
     {
         presentGameMap = gameMap;
 
@@ -44,10 +51,14 @@ public class MapController
             for(int j = column; j<height; j++)
             {
                 String mapElement = gameMap.getMapElement(i, j);
-                zoneLoader.createZone(mapElement);
+                Point coordinateZone = new Point(i,j);
+                Zone newZone = zoneLoader.createZone(mapElement,coordinateZone);
+                zoneList.add(newZone);
             }
-            System.out.println();
+            //System.out.println();
         }
+
+        return zoneList;
     }
 
     /**
@@ -57,9 +68,11 @@ public class MapController
      */
     public void updateGameMap(int lineDirection, int columnDirection)
     {
-            //он может уйти в минусовую степень! Может стоит создать отдельный класс?
-            line += lineDirection;
-            column += columnDirection;
+            if((line + lineDirection >= 0) && (column + columnDirection >= 0))
+            {
+                line += lineDirection;
+                column += columnDirection;
+            }
 
             loadGameMap(presentGameMap);
     }
