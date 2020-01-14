@@ -2,17 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/MainScene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QueueLevels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/levels/Level.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/levels/SecondLevel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/beta/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beta/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beta/sample/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beta/sample/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beta/sample/sample.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/testFrame/environment/MapController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/environment/MapController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/Zone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/gameObjects/Zone.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/ZoneLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/gameObjects/ZoneLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameObjectsImages/cloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameObjectsImages/emptiness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameObjectsImages/sky.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameObjectsImages/soil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/testFrame/src/environment/MapController.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/environment/MapController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/environment/Maps/FirstGameMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/environment/Maps/FirstGameMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/Zone.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/Zone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/environment/Maps/SecondGameMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/environment/Maps/SecondGameMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/ZoneLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/ZoneLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/gameObjectsImages/test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/gameObjectsImages/cloud.png" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/zoneImages/cloud.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/gameObjectsImages/emptiness.png" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/zoneImages/emptiness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/gameObjectsImages/sky.png" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/zoneImages/sky.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/gameObjectsImages/soil.png" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/zoneImages/soil.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,12 +155,12 @@
       <Port>5050</Port>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+      <option name="MAIN_CLASS_NAME" value="MainScene" />
       <module name="beta" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sample.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -233,54 +246,58 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578870257257" />
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1578957580567">
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1579042666991">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578957580567" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579042666991" />
     <state x="695" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1579006616007">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="695" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579006616007" />
-    <state x="714" y="72" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578750362062">
+    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579044573942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="714" y="72" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578750362062" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1579019003939">
+    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579044573942" />
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579033294467">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579019003939" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1579019003939">
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579033294467" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1579044106732">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579019003939" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1579019003939">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579044106732" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1579044106731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579019003939" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1579019003939">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579044106731" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1579044106730">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579019003939" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1579012210178">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579044106730" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1579044106732">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579012210178" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1579012210178">
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579044106732" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1579022783099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579012210178" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1579012210178">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579022783099" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1579022783099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579012210178" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1579012210178">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579022783099" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1579022783099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579012210178" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1578955831214">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579022783099" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1579022783099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578955831214" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579022783099" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1579044511441">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579044511441" />
     <state x="664" y="414" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1578845772414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -293,25 +310,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="702" y="140" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578752907855" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1579002995518">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1579019974948">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579002995518" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/testFrame/src/gameObjects/ZoneLoader.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/testFrame/src/gameObjects/Zone.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579019974948" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1579032867516">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579032867516" />
   </component>
 </project>

@@ -6,11 +6,11 @@ import javafx.scene.image.ImageView;
 import java.awt.*;
 import java.io.InputStream;
 
-public class Zone extends ImageView{
+public class Tile extends ImageView{
 
     private Container container;
 
-    public Zone(Container container)
+    public Tile(Container container)
     {
         this.container = container;
         loadImage();

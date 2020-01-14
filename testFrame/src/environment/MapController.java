@@ -1,8 +1,7 @@
 package environment;
 
-import gameObjects.Zone;
-import gameObjects.ZoneLoader;
-import javafx.scene.image.ImageView;
+import gameObjects.Tile;
+import gameObjects.TileLoader;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -14,8 +13,8 @@ public class MapController
 
     private GameMap presentGameMap;
 
-    private ZoneLoader zoneLoader = new ZoneLoader();
-    private List<ImageView> zoneList = new ArrayList<>();
+    private TileLoader tileLoader = new TileLoader();
+    private List<Tile> tileList = new ArrayList<>();
 
     private static MapController mapController;
 
@@ -34,12 +33,8 @@ public class MapController
         return mapController == null ? mapController = new MapController() : mapController;
     }
 
-
-    /**
-     * метод загрузки карты
-     * @param gameMap карта которую мы загружаем
-     */
-    public List<ImageView> loadGameMap(GameMap gameMap)
+    //возможно стоит поменять название метода
+    public List<Tile> loadGameMap(GameMap gameMap)
     {
         presentGameMap = gameMap;
 
@@ -54,20 +49,16 @@ public class MapController
 
                 Point coordinateZone = new Point(j,i);
 
-                Zone newZone = zoneLoader.createZone(mapElement,coordinateZone);
-                zoneList.add(newZone);
+                Tile newTile = tileLoader.createZone(mapElement,coordinateZone);
+                tileList.add(newTile);
             }
         }
 
-        return zoneList;
+        return tileList;
     }
 
-    /**
-     * метод обновления карты при движении персонажа
-     * @param lineDirection значение напрвления по оси OX (1 -- вправа//-1 -- влево//0 -- стоит на месте)
-     * @param columnDirection значение направления по оси OY (1 -- вниз//-1 -- вверх//0 -- стоит на месте)
-     */
-    public void updateGameMap(int lineDirection, int columnDirection)
+
+    public List<Tile> updateGameMap(int lineDirection, int columnDirection)
     {
             if((line + lineDirection >= 0) && (column + columnDirection >= 0))
             {
@@ -75,7 +66,14 @@ public class MapController
                 column += columnDirection;
             }
 
-            loadGameMap(presentGameMap);
+            return loadGameMap(presentGameMap);
     }
 
+    public Camera getCamera() {
+        return camera;
+    }
+
+    public void setCamera(Camera camera) {
+        this.camera = camera;
+    }
 }
