@@ -8,24 +8,22 @@ import java.io.InputStream;
 
 public class Zone extends ImageView{
 
-    private PropertiesZone propertiesZone;
-    public int sizeZone;
-    private ImageView imageview;
+    private Container container;
 
-    public Zone(int sizeZone, String urlImage, PropertiesZone propertiesZone)
+    public Zone(Container container)
     {
-        this.sizeZone = sizeZone;
-        this.propertiesZone = propertiesZone;
-
-        loadImage(urlImage);
+        this.container = container;
+        loadImage();
     }
 
-    private void loadImage(String urlImage)
+    private void loadImage()
     {
+        String urlImage = container.getUrlImage();
+        int sizeZone = container.getSizeZone();
+
         InputStream input = getClass().getResourceAsStream(urlImage);
         Image image = new Image(input);
 
-        //imageview = new ImageView(image);
         super.setImage(image);
         super.setFitWidth(sizeZone);
         super.setFitHeight(sizeZone);
@@ -37,7 +35,4 @@ public class Zone extends ImageView{
         super.setY(coordinate.y);
     }
 
-    public PropertiesZone getPropertiesZone() {
-        return propertiesZone;
-    }
 }

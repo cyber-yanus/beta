@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/Container.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI" beforeDir="false" afterPath="$PROJECT_DIR$/UI" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/beta/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beta/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/environment/MapController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/environment/MapController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/Zone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/gameObjects/Zone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/ZoneLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/gameObjects/ZoneLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/environment/MapController.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/environment/MapController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/Zone.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/Zone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/ZoneLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/ZoneLoader.java" afterDir="false" />
     </list>
@@ -245,38 +238,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="72" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578750362062" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1579008597161">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1579012242873">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579008597161" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1579008597161">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579012242873" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1579012242873">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579008597161" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1579008597161">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579012242873" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1579012242872">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579008597161" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1579008597161">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579012242872" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1579012242873">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579008597161" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1579007683545">
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579012242873" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1579012210178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579007683545" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1579007683545">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579012210178" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1579012210178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579007683545" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1579007683544">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579012210178" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1579012210178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579007683544" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1579007683545">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579012210178" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1579012210178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579007683545" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579012210178" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1578955831214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -308,13 +301,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/testFrame/src/gameObjects/ZoneLoader.java</url>
-          <line>23</line>
+          <line>21</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/testFrame/src/gameObjects/Zone.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
