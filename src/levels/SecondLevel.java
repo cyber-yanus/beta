@@ -6,8 +6,6 @@ import environment.Maps.SecondGameMap;
 public class SecondLevel implements Level {
 
     private GameMap levelGameMap = new SecondGameMap();
-    private int ID = 2;
-
 
     public SecondLevel()
     {}
