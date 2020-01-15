@@ -1,5 +1,5 @@
 import environment.GameMap;
-import gameObjects.Pers;
+import gameObjects.mainPers.Pers;
 import levels.FirstLevel;
 import levels.Level;
 import levels.SecondLevel;

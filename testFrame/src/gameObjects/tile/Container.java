@@ -1,20 +1,20 @@
-package gameObjects;
+package gameObjects.tile;
 
 public class Container {
 
-    private PropertiesZone propertiesZone;
+    private PropertiesTile propertiesTile;
     private int sizeZone;
     private String urlImage;
 
-    Container(int sizeZone, String urlImage, PropertiesZone propertiesZone)
+    Container(int sizeZone, String urlImage, PropertiesTile propertiesTile)
     {
         this.sizeZone = sizeZone;
         this.urlImage = urlImage;
-        this.propertiesZone = propertiesZone;
+        this.propertiesTile = propertiesTile;
     }
 
-    public PropertiesZone getPropertiesZone() {
-        return propertiesZone;
+    public PropertiesTile getPropertiesTile() {
+        return propertiesTile;
     }
 
     public int getSizeZone() {

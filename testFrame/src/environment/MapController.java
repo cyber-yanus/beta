@@ -1,7 +1,7 @@
 package environment;
 
-import gameObjects.Tile;
-import gameObjects.TileLoader;
+import gameObjects.tile.Tile;
+import gameObjects.tile.TileLoader;
 
 import java.awt.*;
 import java.util.ArrayList;

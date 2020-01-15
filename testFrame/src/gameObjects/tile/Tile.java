@@ -1,5 +1,6 @@
-package gameObjects;
+package gameObjects.tile;
 
+import gameObjects.tile.Container;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
@@ -8,7 +9,7 @@ import java.io.InputStream;
 
 public class Tile extends ImageView{
 
-    private Container container;
+    private gameObjects.tile.Container container;
 
     public Tile(Container container)
     {
