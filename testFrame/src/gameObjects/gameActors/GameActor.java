@@ -1,8 +1,10 @@
 package gameObjects.mainPers;
 
+import handler.MoveDirections;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
+import java.awt.*;
 import java.io.InputStream;
 
 public class GameActor {
@@ -32,6 +34,14 @@ public class GameActor {
         //super.setImage(image);
     }
 
+
+    public void fire() {}
+
+
+    public void move(MoveDirections moveDirections)
+    {
+
+    }
 
 
 

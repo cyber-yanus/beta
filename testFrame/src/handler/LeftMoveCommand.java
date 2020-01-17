@@ -6,9 +6,9 @@ public class MoveCommand implements Command {
 
     private MoveDirections moveDirections;
 
-
     @Override
-    public void execute(GameActor gameActor) {
-        gameActor.
+    public void execute(GameActor gameActor)
+    {
+        gameActor.move();
     }
 }
