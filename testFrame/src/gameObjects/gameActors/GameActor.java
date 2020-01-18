@@ -1,13 +1,12 @@
-package gameObjects.mainPers;
+package gameObjects.gameActors;
 
 import handler.MoveDirections;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 
-import java.awt.*;
+import javafx.scene.image.Image;
+
 import java.io.InputStream;
 
-public class GameActor {
+public abstract class GameActor {
 
     protected int heals = 100;
     protected int speed = 2;

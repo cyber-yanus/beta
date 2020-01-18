@@ -1,4 +1,4 @@
-package gameObjects.mainPers;
+package gameObjects.gameActors;
 
 public class SuperPers {
 }

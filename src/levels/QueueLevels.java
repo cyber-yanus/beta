@@ -1,15 +1,11 @@
+package levels;
+
 import environment.GameMap;
-import gameObjects.mainPers.Pers;
-import levels.FirstLevel;
-import levels.Level;
-import levels.SecondLevel;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class QueueLevels {
-
-    private Pers pers = new Pers();
 
     private Level nowLevel;
     private GameMap nowGameMap;
@@ -17,7 +13,7 @@ public class QueueLevels {
 
     private List<Level> levels = new ArrayList<>();
 
-    QueueLevels()
+    public QueueLevels()
     {
         levels.add(new FirstLevel());
         levels.add(new SecondLevel());

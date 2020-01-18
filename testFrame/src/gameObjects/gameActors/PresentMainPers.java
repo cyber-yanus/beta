@@ -1,10 +1,10 @@
-package gameObjects.mainPers;
+package gameObjects.gameActors;
 
-public class PresentMainPers {
+public class PresentMainPers
+{
+    private GameActor presentPers = new NormalPers();
 
-    private GameActor presentPers;
     private static PresentMainPers presentMainPers;
-
 
     private PresentMainPers(){}
 
@@ -13,7 +13,7 @@ public class PresentMainPers {
         return presentMainPers == null ? presentMainPers = new PresentMainPers() : presentMainPers;
     }
 
-    public void settingPresentPers(GameActor actor)
+    public void addPresentPers(GameActor actor)
     {
         presentPers = actor;
     }

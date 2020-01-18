@@ -1,20 +1,21 @@
 package handler;
 
-import gameObjects.mainPers.GameActor;
-import gameObjects.mainPers.Pers;
+import handler.commands.*;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
+
 
 public class InputHandler {
 
-    private Pers pers = new Pers();
-
     private Command LMB = new FireCommand();
-    private Command buttonMove = new MoveCommand();
+    private Command button_A = new LeftMoveCommand();
+    private Command button_W = new UpMoveCommand();
+    private Command button_D = new RightMoveCommand();
+    private Command button_S = new DownMoveCommand();
 
-    public InputHandler(GameActor gameActor)
-    {
 
-    }
-
+    public InputHandler()
+    {}
 
     public void settingsHandler()
     {
@@ -22,10 +23,25 @@ public class InputHandler {
 
     }
 
-
-    public void handleInput()
+    public Command handleInput(KeyEvent keyEvent)
     {
-        if(true) buttonMove.execute(pers);
+        switch (keyEvent.getCode())
+        {
+            case W: return button_W;
+            case A: return button_A;
+            case S: return button_S;
+            case D: return button_D;
+        }
+        return null;
+    }
+
+    public Command handleInput(MouseEvent mouseEvent)
+    {
+        switch (mouseEvent.getButton())
+        {
+            case PRIMARY: return LMB;
+        }
+        return null;
     }
 
 
