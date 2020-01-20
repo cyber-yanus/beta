@@ -17,7 +17,7 @@ import javafx.stage.Stage;
 
 public class MainScene extends Application
 {
-    private Pane root = new Pane();
+    private Pane mainRoot = new Pane();
 
     private QueueLevels queueLevels = new QueueLevels();
 
@@ -28,7 +28,7 @@ public class MainScene extends Application
     @Override
     public void start(Stage primaryStage)
     {
-        Scene scene = new Scene(root, 300, 275);
+        Scene scene = new Scene(mainRoot, 300, 275);
 
         loadNewLevel();
 
@@ -45,16 +45,16 @@ public class MainScene extends Application
     private void loadNewLevel()
     {
         if (queueLevels.getPresentLevel() != null)
-            root.getChildren().removeAll(queueLevels.getPresentLevel().getTiles());
+            mainRoot.getChildren().removeAll(queueLevels.getPresentLevel().getTiles());
 
         queueLevels.startNextLevel();
 
-        root.getChildren().addAll(queueLevels.getPresentLevel().getTiles());
+        mainRoot.getChildren().addAll(queueLevels.getPresentLevel().getTiles());
     }
 
     public void loadUpdateMap()
     {
-        root.getChildren().addAll(queueLevels.getPresentLevel().updateMap());
+        mainRoot.getChildren().addAll(queueLevels.getPresentLevel().updateMap());
     }
 
     private void input(Scene scene)

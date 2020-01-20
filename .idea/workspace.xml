@@ -2,71 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/beta/GameLoop.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/testFrame/environment/Maps/GameMap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameActors/Actor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameActors/MainActor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameActors/MainActorController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameActors/Monster.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameActors/actorImages/normalActor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameLoop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testFrame/src/environment/Maps/GameMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/gameActors/Actor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/gameActors/MainActor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/gameActors/MainActorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/gameActors/Monster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/gameActors/actorImages/normalActor.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/beta/MainScene$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beta/MainScene$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/beta/MainScene$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beta/MainScene$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/beta/MainScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beta/MainScene.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/beta/levels/FirstLevel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/beta/levels/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beta/levels/Level.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/beta/levels/QueueLevels.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beta/levels/QueueLevels.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/beta/levels/SecondLevel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/environment/Camera.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/environment/Camera.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/environment/GameMap.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/testFrame/environment/MapController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/environment/MapController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/environment/Maps/FirstGameMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/environment/Maps/FirstGameMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/environment/Maps/SecondGameMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/environment/Maps/SecondGameMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameActors/GameActor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameActors/NormalPers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameActors/PresentMainPers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameActors/SuperPers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameActors/Villain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/tile/Tile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/gameObjects/tile/Tile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/handler/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/handler/Command.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/handler/InputHandler$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/handler/InputHandler$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/handler/InputHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/handler/InputHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/handler/commands/DownMoveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/handler/commands/DownMoveCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/handler/commands/FireCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/handler/commands/FireCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/handler/commands/LeftMoveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/handler/commands/LeftMoveCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/handler/commands/RightMoveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/handler/commands/RightMoveCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/handler/commands/UpMoveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/handler/commands/UpMoveCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/levels/FirstLevel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/levels/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/levels/Level.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/levels/QueueLevels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/levels/QueueLevels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/levels/SecondLevel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/environment/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/environment/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/environment/GameMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/environment/MapController.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/environment/MapController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/environment/Maps/FirstGameMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/environment/Maps/FirstGameMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/environment/Maps/SecondGameMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/environment/Maps/SecondGameMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/gameActors/GameActor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/gameActors/NormalPers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/gameActors/PresentMainPers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/gameActors/SuperPers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/gameActors/Villain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/tile/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/tile/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/tile/TileLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/tile/TileLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/handler/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/handler/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/handler/InputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/handler/InputHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/handler/commands/DownMoveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/handler/commands/DownMoveCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/handler/commands/FireCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/handler/commands/FireCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/handler/commands/LeftMoveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/handler/commands/LeftMoveCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/handler/commands/RightMoveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/handler/commands/RightMoveCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/handler/commands/UpMoveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/handler/commands/UpMoveCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -308,22 +250,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579381071674" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1579536038343">
+    <state width="1877" height="195" key="GridCell.Tab.0.bottom" timestamp="1579546829366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579536038343" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1579536038342">
+    <state width="1877" height="195" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579546829366" />
+    <state width="1877" height="195" key="GridCell.Tab.0.center" timestamp="1579546829365">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579536038342" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1579536038342">
+    <state width="1877" height="195" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579546829365" />
+    <state width="1877" height="195" key="GridCell.Tab.0.left" timestamp="1579546829364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579536038342" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1579536038342">
+    <state width="1877" height="195" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579546829364" />
+    <state width="1877" height="195" key="GridCell.Tab.0.right" timestamp="1579546829365">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579536038342" />
+    <state width="1877" height="195" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579546829365" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1579536038343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
