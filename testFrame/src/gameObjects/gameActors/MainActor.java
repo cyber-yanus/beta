@@ -21,8 +21,6 @@ public class MainActor extends Actor {
     public void move(MoveDirections direction) {
         Point dir = direction.getDirection();
 
-        System.out.println("Move " + direction.getDirection());
-
         //запуск спрайта
 
         lineOnMap = dir.x;

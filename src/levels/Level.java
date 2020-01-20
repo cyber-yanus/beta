@@ -36,7 +36,7 @@ public class Level{
     {
         Point dir = mainActorController.getPresentPers().getDirectionPoint();
 
-        return mapController.updateGameMap(dir.x, dir.y);
+        return mapController.updateCamera(dir.x, dir.y);
     }
 
 }

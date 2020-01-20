@@ -6,9 +6,16 @@
       <change beforePath="$PROJECT_DIR$/out/production/beta/MainScene$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beta/MainScene$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/beta/MainScene$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beta/MainScene$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/beta/MainScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beta/MainScene.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beta/levels/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beta/levels/Level.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beta/levels/QueueLevels.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beta/levels/QueueLevels.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/environment/Camera.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/environment/Camera.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/testFrame/environment/MapController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/environment/MapController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameActors/MainActor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameActors/MainActor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/levels/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/levels/Level.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/levels/QueueLevels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/levels/QueueLevels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/environment/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/environment/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/environment/MapController.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/environment/MapController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/gameActors/MainActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/gameActors/MainActor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,30 +249,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="380" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1579381131411" />
-    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579384353974">
+    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579552166020">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579384353974" />
+    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579552166020" />
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579381071674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579381071674" />
-    <state width="1877" height="195" key="GridCell.Tab.0.bottom" timestamp="1579546829366">
+    <state width="1877" height="195" key="GridCell.Tab.0.bottom" timestamp="1579553220090">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="195" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579546829366" />
-    <state width="1877" height="195" key="GridCell.Tab.0.center" timestamp="1579546829365">
+    <state width="1877" height="195" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579553220090" />
+    <state width="1877" height="195" key="GridCell.Tab.0.center" timestamp="1579553220089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="195" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579546829365" />
-    <state width="1877" height="195" key="GridCell.Tab.0.left" timestamp="1579546829364">
+    <state width="1877" height="195" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579553220089" />
+    <state width="1877" height="195" key="GridCell.Tab.0.left" timestamp="1579553220088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="195" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579546829364" />
-    <state width="1877" height="195" key="GridCell.Tab.0.right" timestamp="1579546829365">
+    <state width="1877" height="195" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579553220088" />
+    <state width="1877" height="195" key="GridCell.Tab.0.right" timestamp="1579553220090">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="195" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579546829365" />
+    <state width="1877" height="195" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579553220089" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1579536038343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -17,8 +17,8 @@ public class QueueLevels {
 
     public QueueLevels()
     {
-        levelsMap.put(1,new FirstGameMap());
-        levelsMap.put(2,new SecondGameMap());
+        levelsMap.put(0,new FirstGameMap());
+        levelsMap.put(1,new SecondGameMap());
     }
 
     private void loadPresentLevel()

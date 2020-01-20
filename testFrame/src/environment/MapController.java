@@ -18,59 +18,51 @@ public class MapController {
     private TileLoader tileLoader = new TileLoader();
     private List<Tile> tileList = new ArrayList<>();
 
-    private int line = 0;
-    private int column = 0;
-
-
-    public MapController() {
+    public MapController()
+    {
         camera = new Camera(4, 4);
     }
 
     public List<Tile> getTilesValues(GameMap gameMap)
     {
-        tileList.removeAll(tileList);
-
         presentGameMap = gameMap;
 
-        int width = camera.getWidth() + line;
-        int height = camera.getHeight() + column;
+        tileList.clear();
 
-        for (int i = line; i < width; i++)
+        int i = camera.getX();
+        int j = camera.getY();
+
+        int width = camera.getWidth();
+        int height = camera.getHeight();
+
+        for (; i < width; i++)
         {
-            for (int j = column; j < height; j++)
+            for (; j < height; j++)
             {
                 String mapElement = gameMap.getMapElement(i, j);
 
-                int xCoordinate = j - column;
-                int yCoordinate = i - line;
+                int xCoordinate = j - camera.getY();
+                int yCoordinate = i - camera.getX();
 
                 Point coordinateZone = new Point(xCoordinate, yCoordinate);
 
                 Tile newTile = tileLoader.createZone(mapElement, coordinateZone);
                 tileList.add(newTile);
             }
+
+            j = camera.getY();
         }
 
         return tileList;
     }
 
 
-    public List<Tile> updateGameMap(int lineDirection, int columnDirection)
+    public List<Tile> updateCamera(int lineDirection, int columnDirection)
     {
-        int x = line + lineDirection;
-        int y = column + columnDirection;
+        int widthMap = presentGameMap.getWidthMap();
+        int heightMap = presentGameMap.getHeightMap();
 
-        int widthPresentMap = presentGameMap.getWidthMap();
-        int heightPresentMap = presentGameMap.getHeightMap();
-
-        if ((x >= 0) && (y >= 0))
-        {
-            if((x + camera.getWidth() <= widthPresentMap) && (y + camera.getHeight() <= heightPresentMap))
-            {
-                line += lineDirection;
-                column += columnDirection;
-            }
-        }
+        camera.updateValuesCamera(lineDirection, columnDirection, widthMap, heightMap);
 
         return getTilesValues(presentGameMap);
     }
