@@ -1,14 +1,16 @@
 package environment;
 
+import environment.Maps.GameMap;
+
 import gameObjects.tile.Tile;
 import gameObjects.tile.TileLoader;
 
 import java.awt.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class MapController
-{
+public class MapController {
     private Camera camera;
 
     private GameMap presentGameMap;
@@ -16,40 +18,35 @@ public class MapController
     private TileLoader tileLoader = new TileLoader();
     private List<Tile> tileList = new ArrayList<>();
 
-    private static MapController mapController;
-
-    private int line=0;
-    private int column=0;
+    private int line = 0;
+    private int column = 0;
 
 
-    private MapController()
-    {
-        camera = new Camera(4,4);
+    public MapController() {
+        camera = new Camera(4, 4);
     }
 
-
-    public static MapController getInstance()
+    public List<Tile> getTilesValues(GameMap gameMap)
     {
-        return mapController == null ? mapController = new MapController() : mapController;
-    }
+        tileList.removeAll(tileList);
 
-    //возможно стоит поменять название метода
-    public List<Tile> loadGameMap(GameMap gameMap)
-    {
         presentGameMap = gameMap;
 
         int width = camera.getWidth() + line;
         int height = camera.getHeight() + column;
 
-        for(int i = line; i<width; i++)
+        for (int i = line; i < width; i++)
         {
-            for(int j = column; j<height; j++)
+            for (int j = column; j < height; j++)
             {
                 String mapElement = gameMap.getMapElement(i, j);
 
-                Point coordinateZone = new Point(j,i);
+                int xCoordinate = j - column;
+                int yCoordinate = i - line;
 
-                Tile newTile = tileLoader.createZone(mapElement,coordinateZone);
+                Point coordinateZone = new Point(xCoordinate, yCoordinate);
+
+                Tile newTile = tileLoader.createZone(mapElement, coordinateZone);
                 tileList.add(newTile);
             }
         }
@@ -60,20 +57,23 @@ public class MapController
 
     public List<Tile> updateGameMap(int lineDirection, int columnDirection)
     {
-            if((line + lineDirection >= 0) && (column + columnDirection >= 0))
+        int x = line + lineDirection;
+        int y = column + columnDirection;
+
+        int widthPresentMap = presentGameMap.getWidthMap();
+        int heightPresentMap = presentGameMap.getHeightMap();
+
+        if ((x >= 0) && (y >= 0))
+        {
+            if((x + camera.getWidth() <= widthPresentMap) && (y + camera.getHeight() <= heightPresentMap))
             {
                 line += lineDirection;
                 column += columnDirection;
             }
+        }
 
-            return loadGameMap(presentGameMap);
+        return getTilesValues(presentGameMap);
     }
 
-    public Camera getCamera() {
-        return camera;
-    }
 
-    public void setCamera(Camera camera) {
-        this.camera = camera;
-    }
 }

@@ -19,7 +19,6 @@ public class Camera {
         height = cameraSize.y;
     }
 
-
     public int getHeight() {
         return height;
     }

@@ -4,8 +4,8 @@ import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TileLoader {
-
+public class TileLoader
+{
     private Map<String, ContainerForTile> tileValues = new HashMap<>();
 
     public TileLoader()

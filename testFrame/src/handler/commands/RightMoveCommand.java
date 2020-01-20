@@ -1,6 +1,6 @@
 package handler.commands;
 
-import gameObjects.gameActors.GameActor;
+import gameObjects.gameActors.Actor;
 import handler.Command;
 import handler.MoveDirections;
 
@@ -9,9 +9,8 @@ public class RightMoveCommand implements Command
     private MoveDirections moveDirections = MoveDirections.RIGHT;
 
     @Override
-    public void execute(GameActor gameActor)
+    public void execute(Actor gameActor)
     {
         gameActor.move(moveDirections);
     }
-
 }

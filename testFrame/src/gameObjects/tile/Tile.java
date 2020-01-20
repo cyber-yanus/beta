@@ -7,8 +7,9 @@ import java.awt.*;
 
 import java.io.InputStream;
 
-public class Tile extends ImageView{
-
+//плохо, что он екстендит ImageView
+public class Tile extends ImageView
+{
     private ContainerForTile containerForTile;
 
     public Tile(ContainerForTile containerForTile)

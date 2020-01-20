@@ -1,8 +1,8 @@
 package handler;
 
-import gameObjects.gameActors.GameActor;
+import gameObjects.gameActors.Actor;
 
 public interface Command
 {
-    void execute(GameActor gameActor);
+    void execute(Actor actor);
 }

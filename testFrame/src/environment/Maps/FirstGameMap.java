@@ -1,7 +1,5 @@
 package environment.Maps;
 
-import environment.GameMap;
-
 /**
  * класс описывающий карту на первом уровне
  */
@@ -19,6 +17,16 @@ public class FirstGameMap implements GameMap
     @Override
     public String getMapElement(int line, int column)
     {
-           return mas[line][column];
+        return mas[line][column];
+    }
+
+    @Override
+    public int getWidthMap() {
+        return mas[0].length;
+    }
+
+    @Override
+    public int getHeightMap() {
+        return mas.length;
     }
 }

@@ -1,7 +1,5 @@
-import environment.MapController;
 
-import gameObjects.gameActors.GameActor;
-import gameObjects.gameActors.PresentMainPers;
+import gameObjects.gameActors.Actor;
 
 import handler.Command;
 import handler.InputHandler;
@@ -25,6 +23,7 @@ public class MainScene extends Application
 
     private InputHandler inputHandler = new InputHandler();
 
+    private GameLoop gameLoop = new GameLoop(this);
 
     @Override
     public void start(Stage primaryStage)
@@ -35,44 +34,49 @@ public class MainScene extends Application
 
         input(scene);
 
+        gameLoop.start();
+
         primaryStage.setTitle("beta");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
 
+
     private void loadNewLevel()
     {
-        if(queueLevels.getNowLevel() != null)
-            root.getChildren().removeAll(MapController.getInstance().loadGameMap(queueLevels.getNowGameMap()));
+        if (queueLevels.getPresentLevel() != null)
+            root.getChildren().removeAll(queueLevels.getPresentLevel().getTiles());
 
         queueLevels.startNextLevel();
-        root.getChildren().addAll(MapController.getInstance().loadGameMap(queueLevels.getNowGameMap()));
 
+        root.getChildren().addAll(queueLevels.getPresentLevel().getTiles());
+    }
+
+    public void loadUpdateMap()
+    {
+        root.getChildren().addAll(queueLevels.getPresentLevel().updateMap());
     }
 
     private void input(Scene scene)
     {
-
         scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent keyEvent) {
                 Command command = inputHandler.handleInput(keyEvent);
-                if(command != null)
-                {
-                    GameActor gameActor = PresentMainPers.getInstance().getPresentPers();
-                    command.execute(gameActor);
+                if (command != null) {
+                    Actor actor = queueLevels.getPresentLevel().getMainActor();
+                    command.execute(actor);
                 }
             }
         });
 
-        scene.setOnMouseClicked(new EventHandler<MouseEvent>() {
+        scene.setOnMousePressed(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
                 Command command = inputHandler.handleInput(mouseEvent);
-                if(command != null)
-                {
-                    GameActor gameActor = PresentMainPers.getInstance().getPresentPers();
-                    command.execute(gameActor);
+                if (command != null) {
+                    Actor actor = queueLevels.getPresentLevel().getMainActor();
+                    command.execute(actor);
                 }
             }
         });

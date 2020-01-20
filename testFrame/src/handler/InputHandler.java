@@ -17,12 +17,6 @@ public class InputHandler {
     public InputHandler()
     {}
 
-    public void settingsHandler()
-    {
-
-
-    }
-
     public Command handleInput(KeyEvent keyEvent)
     {
         switch (keyEvent.getCode())

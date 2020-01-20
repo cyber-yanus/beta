@@ -1,41 +1,49 @@
 package levels;
 
-import environment.GameMap;
+import environment.Maps.FirstGameMap;
+import environment.Maps.SecondGameMap;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class QueueLevels {
 
-    private Level nowLevel;
-    private GameMap nowGameMap;
-    private int numberNowLevel = -1;
+    private Level presentLevel;
+
+    private int numberPresentLevel = -1;
 
     private List<Level> levels = new ArrayList<>();
 
+    //надо создать hashMap для уровней
+
     public QueueLevels()
     {
-        levels.add(new FirstLevel());
-        levels.add(new SecondLevel());
+        Level firstLevel = new Level(new FirstGameMap());
+        Level secondLevel = new Level(new SecondGameMap());
+
+        levels.add(firstLevel);
+        levels.add(secondLevel);
     }
 
-    private void loadNowLevel()
+    private void loadPresentLevel()
     {
-        nowLevel = levels.get(numberNowLevel);
-        nowGameMap = nowLevel.getMap();
+        //переходим на следующий уровень
+        presentLevel = levels.get(numberPresentLevel);
     }
 
-    public void startNextLevel()
+    public Level startNextLevel()
     {
-        numberNowLevel++;
-        loadNowLevel();
+        numberPresentLevel++;
+
+        loadPresentLevel();
+
+        return presentLevel;
     }
 
-    public Level getNowLevel() {
-        return nowLevel;
+    public Level getPresentLevel() {
+        return presentLevel;
     }
 
-    public GameMap getNowGameMap() {
-        return nowGameMap;
-    }
+
+
 }

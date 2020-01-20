@@ -1,8 +1,7 @@
 package environment.Maps;
 
-import environment.GameMap;
-
-public class SecondGameMap implements GameMap {
+public class SecondGameMap implements GameMap
+{
     private final String[][] mas = {
             {"A","+","+","+","+","+"},
             {"+","+","+","A","+","+"},
@@ -16,5 +15,15 @@ public class SecondGameMap implements GameMap {
     public String getMapElement(int line, int column)
     {
         return mas[line][column];
+    }
+
+    @Override
+    public int getWidthMap() {
+        return mas[0].length;
+    }
+
+    @Override
+    public int getHeightMap() {
+        return mas.length;
     }
 }
