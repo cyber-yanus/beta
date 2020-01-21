@@ -1,19 +1,21 @@
 package levels;
 
+import environment.GameMapController;
 import environment.Maps.GameMap;
-import environment.MapController;
 
 import gameObjects.gameActors.Actor;
 import gameObjects.gameActors.MainActorController;
-import gameObjects.tile.Tile;
+
+import javafx.scene.layout.Pane;
 
 import java.awt.*;
-import java.util.List;
+import java.util.Collection;
 
 public class Level{
 
     private GameMap levelGameMap;
-    private MapController mapController = new MapController();
+
+    private GameMapController mapController = new GameMapController();
 
     private MainActorController mainActorController = new MainActorController();
 
@@ -22,9 +24,11 @@ public class Level{
         this.levelGameMap = levelGameMap;
     }
 
-    public List<Tile> getTiles()
+    public Collection<Pane> getLevelLayers()
     {
-        return mapController.getTilesValues(levelGameMap);
+        mapController.decomposingMapIntoLayers(levelGameMap);
+
+        return mapController.getLayers().getValueLayers();
     }
 
     public Actor getMainActor()
@@ -32,11 +36,13 @@ public class Level{
         return mainActorController.getPresentPers();
     }
 
-    public List<Tile> updateMap()
+    public Collection<Pane> updateMap()
     {
         Point dir = mainActorController.getPresentPers().getDirectionPoint();
 
-        return mapController.updateCamera(dir.x, dir.y);
+        mapController.updateCamera(dir.x, dir.y);
+
+        return mapController.getLayers().getValueLayers();
     }
 
 }

@@ -10,7 +10,8 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MapController {
+public class GameMapController
+{
     private Camera camera;
 
     private GameMap presentGameMap;
@@ -18,16 +19,16 @@ public class MapController {
     private TileLoader tileLoader = new TileLoader();
     private List<Tile> tileList = new ArrayList<>();
 
-    public MapController()
+    private Layers layers = new Layers();
+
+    public GameMapController()
     {
         camera = new Camera(4, 4);
     }
 
-    public List<Tile> getTilesValues(GameMap gameMap)
+    public void decomposingMapIntoLayers(GameMap gameMap)
     {
         presentGameMap = gameMap;
-
-        tileList.clear();
 
         int i = camera.getX();
         int j = camera.getY();
@@ -49,23 +50,26 @@ public class MapController {
                 Tile newTile = tileLoader.createZone(mapElement, coordinateZone);
                 tileList.add(newTile);
             }
+            layers.addLayer(tileList);
+
+            tileList.clear();
 
             j = camera.getY();
         }
-
-        return tileList;
     }
 
 
-    public List<Tile> updateCamera(int lineDirection, int columnDirection)
+    public void updateCamera(int lineDirection, int columnDirection)
     {
         int widthMap = presentGameMap.getWidthMap();
         int heightMap = presentGameMap.getHeightMap();
 
         camera.updateValuesCamera(lineDirection, columnDirection, widthMap, heightMap);
 
-        return getTilesValues(presentGameMap);
+        decomposingMapIntoLayers(presentGameMap);
     }
 
-
+    public Layers getLayers() {
+        return layers;
+    }
 }
