@@ -1,8 +1,8 @@
 package levels;
 
-import environment.Maps.FirstGameMap;
-import environment.Maps.GameMap;
-import environment.Maps.SecondGameMap;
+import gameMaps.tileMaps.FirstTileGameMap;
+import gameMaps.GameMap;
+import gameMaps.tileMaps.SecondTileGameMap;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,17 +17,17 @@ public class QueueLevels {
 
     public QueueLevels()
     {
-        levelsMap.put(0,new FirstGameMap());
-        levelsMap.put(1,new SecondGameMap());
+        levelsMap.put(0,new FirstTileGameMap());
+        levelsMap.put(1,new SecondTileGameMap());
     }
 
     private void loadPresentLevel()
     {
         //получаем карту следующего уровня
-        GameMap presentLevelMap = levelsMap.get(numberPresentLevel);
+        GameMap presentLevelGameMap = levelsMap.get(numberPresentLevel);
 
         //переходим на следующий уровень
-        presentLevel = new Level(presentLevelMap);
+        presentLevel = new Level(presentLevelGameMap);
     }
 
     public void startNextLevel()

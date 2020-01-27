@@ -11,8 +11,9 @@ public class GameLoop extends AnimationTimer
     }
 
     @Override
-    public void handle(long l) {
-        mainScene.loadUpdateMap();
+    public void handle(long l)
+    {
+     //   mainScene.loadUpdateMap();
     }
 
 

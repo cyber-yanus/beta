@@ -2,16 +2,76 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/testFrame/src/environment/Layers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testFrame/src/gameMaps/GameMapController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testFrame/src/gameMaps/objectMaps/FirstObjectsGameMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/GameObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/GameObjectLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/actors/PeaseCivilion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/environment/Stone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/environment/Tree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testFrame/src/observer/GameEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testFrame/src/observer/GameObserver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/beta/MainScene$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beta/MainScene$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/beta/MainScene$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beta/MainScene$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beta/GameLoop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beta/GameLoop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beta/MainScene$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beta/MainScene$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/beta/MainScene.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beta/MainScene.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/beta/levels/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beta/levels/Level.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/testFrame/environment/MapController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/beta/levels/QueueLevels.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/beta/levels/QueueLevels.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/environment/Camera.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/environment/GameMapController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/environment/Layers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/environment/Maps/FirstGameMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/environment/Maps/GameMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/environment/Maps/SecondGameMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameActors/Actor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameActors/MainActor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameActors/MainActorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameActors/Monster.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/gameActors/actorImages/normalActor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/tile/ContainerForTile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/tile/PropertiesTile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/tile/Tile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/tile/TileLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/tile/tileImages/cloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/tile/tileImages/emptiness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/tile/tileImages/sky.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/gameObjects/tile/tileImages/soil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/handler/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/handler/Command.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/handler/commands/DownMoveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/handler/commands/DownMoveCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/handler/commands/FireCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/handler/commands/FireCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/handler/commands/LeftMoveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/handler/commands/LeftMoveCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/handler/commands/RightMoveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/handler/commands/RightMoveCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testFrame/handler/commands/UpMoveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testFrame/handler/commands/UpMoveCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameLoop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainScene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/levels/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/levels/Level.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFrame/src/environment/MapController.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/environment/GameMapController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/levels/QueueLevels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/levels/QueueLevels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/environment/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameMaps/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/environment/GameMapController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/environment/Layers.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameMaps/Layers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/environment/Maps/FirstGameMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameMaps/tileMaps/FirstTileGameMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/environment/Maps/GameMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameMaps/GameMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/environment/Maps/SecondGameMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameMaps/tileMaps/SecondTileGameMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/gameActors/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/gameActors/MainActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/actors/MainActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/gameActors/MainActorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/GameObjectsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/gameActors/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/actors/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/gameActors/actorImages/normalActor.png" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameObjects/actors/actorImages/normalActor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/tile/ContainerForTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameTiles/tile/ContainerForTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/tile/PropertiesTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameTiles/tile/PropertiesTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/tile/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameTiles/tile/Tile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/tile/TileLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameTiles/TileLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/tile/tileImages/cloud.png" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameTiles/tileImages/cloud.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/tile/tileImages/emptiness.png" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameTiles/tileImages/emptiness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/tile/tileImages/sky.png" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameTiles/tileImages/sky.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/gameObjects/tile/tileImages/soil.png" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/gameTiles/tileImages/soil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/handler/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/handler/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/handler/commands/DownMoveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/handler/commands/DownMoveCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/handler/commands/FireCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/handler/commands/FireCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/handler/commands/LeftMoveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/handler/commands/LeftMoveCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/handler/commands/RightMoveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/handler/commands/RightMoveCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testFrame/src/handler/commands/UpMoveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFrame/src/handler/commands/UpMoveCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,8 +126,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -233,42 +293,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578870257257" />
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1579528389791">
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1580081409353">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579528389791" />
-    <state x="695" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1579091351284">
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1580081409353" />
+    <state x="695" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1579891630402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="695" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579091351284" />
+    <state x="695" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579891630402" />
     <state x="756" y="380" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1579381131411">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="380" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1579381131411" />
-    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579552166020">
+    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579963539861">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579552166020" />
-    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579381071674">
+    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579963539861" />
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580071888383">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579381071674" />
-    <state width="1877" height="195" key="GridCell.Tab.0.bottom" timestamp="1579565152532">
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580071888383" />
+    <state width="1877" height="195" key="GridCell.Tab.0.bottom" timestamp="1579972624619">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="195" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579565152532" />
-    <state width="1877" height="195" key="GridCell.Tab.0.center" timestamp="1579565152532">
+    <state width="1877" height="195" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579972624619" />
+    <state width="1877" height="195" key="GridCell.Tab.0.center" timestamp="1579972624619">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="195" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579565152532" />
-    <state width="1877" height="195" key="GridCell.Tab.0.left" timestamp="1579565152532">
+    <state width="1877" height="195" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579972624619" />
+    <state width="1877" height="195" key="GridCell.Tab.0.left" timestamp="1579972624619">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="195" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579565152532" />
-    <state width="1877" height="195" key="GridCell.Tab.0.right" timestamp="1579565152532">
+    <state width="1877" height="195" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579972624619" />
+    <state width="1877" height="195" key="GridCell.Tab.0.right" timestamp="1579972624619">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="195" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579565152532" />
+    <state width="1877" height="195" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579972624619" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1579536038343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -285,10 +345,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579536038343" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1579540842534">
+    <state x="484" y="269" key="caller.chooser.dialog" timestamp="1579924359066">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579540842534" />
+    <state x="484" y="269" key="caller.chooser.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579924359066" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580071681157">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580071681157" />
     <state x="664" y="414" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1578845772414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -313,9 +377,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579019974948" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1579032867516">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1580079501296">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579032867516" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580079501296" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 package handler;
 
-import gameObjects.gameActors.Actor;
+import gameObjects.Actor;
 
 public interface Command
 {

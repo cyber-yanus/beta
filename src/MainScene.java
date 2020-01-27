@@ -1,6 +1,9 @@
 
-import gameObjects.gameActors.Actor;
+import gameObjects.Actor;
 
+import gameObjects.GameObject;
+import gameObjects.actors.Enemy;
+import gameObjects.actors.MainActor;
 import handler.Command;
 import handler.InputHandler;
 
@@ -30,9 +33,19 @@ public class MainScene extends Application
     {
         Scene scene = new Scene(mainLayer, 300, 275);
 
-        loadNewLevel();
+        //loadNewLevel();
 
-        input(scene);
+        //input(scene);
+
+        GameObject gameObject = new MainActor(10,101,101,10);
+
+
+        MainActor mainActor = (MainActor) gameObject;
+
+        System.out.println(mainActor.getLine());
+
+
+
 
         gameLoop.start();
 
@@ -40,7 +53,7 @@ public class MainScene extends Application
         primaryStage.setScene(scene);
         primaryStage.show();
     }
-
+/*
 
     private void loadNewLevel()
     {
@@ -82,7 +95,7 @@ public class MainScene extends Application
         });
 
     }
-
+*/
 
 }
 

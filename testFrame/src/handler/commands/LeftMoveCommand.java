@@ -1,6 +1,6 @@
 package handler.commands;
 
-import gameObjects.gameActors.Actor;
+import gameObjects.Actor;
 import handler.Command;
 import handler.MoveDirections;
 
