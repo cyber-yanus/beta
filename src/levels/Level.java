@@ -9,9 +9,11 @@ public class Level{
 
     private GameObjectsController gameObjectsController = new GameObjectsController();
 
+    /*
     public Level(GameMap levelGameMap)
     {
         this.levelGameMap = levelGameMap;
     }
+     */
 
 }

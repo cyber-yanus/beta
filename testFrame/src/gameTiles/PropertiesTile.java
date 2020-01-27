@@ -1,4 +1,4 @@
-package gameTiles.tile;
+package gameTiles;
 
 public enum PropertiesTile
 {

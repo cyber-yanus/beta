@@ -1,9 +1,8 @@
 package gameMaps;
 
 import gameObjects.GameObject;
-import gameObjects.GameObjectLoader;
-import gameTiles.TileLoader;
-import gameTiles.tile.Tile;
+import gameTiles.TileController;
+import gameTiles.Tile;
 
 import java.awt.*;
 
@@ -12,9 +11,7 @@ public class GameMapController {
     private GameMap objectsGameMap;
     private GameMap tilesGameMap;
 
-    private TileLoader tileLoader = new TileLoader();
-
-    private GameObjectLoader gameObjectLoader = new GameObjectLoader();
+    private TileController tileController = new TileController();
 
     private Camera camera;
 
@@ -23,11 +20,14 @@ public class GameMapController {
         camera = new Camera(4,4);
     }
 
+
+
     public void addMaps(GameMap objectsGameMap, GameMap tilesGameMap)
     {
         this.objectsGameMap = objectsGameMap;
         this.tilesGameMap = tilesGameMap;
     }
+
 
     public void decomposingMapIntoLayers()
     {
@@ -49,8 +49,8 @@ public class GameMapController {
 
                 Point coordinateZone = new Point(xCoordinate, yCoordinate);
 
-                Tile newTile = tileLoader.createTile(tilesMapElement, coordinateZone);
-                GameObject gameObject = gameObjectLoader.createGameObject(objectMapElement, coordinateZone);
+//                Tile newTile = tileController.createTile(tilesMapElement, coordinateZone);
+  //              GameObject gameObject = gameObjectLoader.createGameObject(objectMapElement, coordinateZone);
 
 
 

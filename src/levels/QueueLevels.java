@@ -27,7 +27,7 @@ public class QueueLevels {
         GameMap presentLevelGameMap = levelsMap.get(numberPresentLevel);
 
         //переходим на следующий уровень
-        presentLevel = new Level(presentLevelGameMap);
+      //  presentLevel = new Level(presentLevelGameMap);
     }
 
     public void startNextLevel()

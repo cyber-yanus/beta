@@ -17,6 +17,9 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class MainScene extends Application
 {
@@ -37,14 +40,22 @@ public class MainScene extends Application
 
         //input(scene);
 
-        GameObject gameObject = new MainActor(10,101,101,10);
+        List<GameObject> gameObjects = new ArrayList<>();
+
+        gameObjects.add(new Enemy(100,1,1,1));
+        gameObjects.add(new MainActor(1,1,1,1));
 
 
-        MainActor mainActor = (MainActor) gameObject;
+        for (GameObject gameObject : gameObjects)
+        {
+            if(gameObject.getClass() == MainActor.class)
+            {
+                System.out.println("enemy");
+            }
 
-        System.out.println(mainActor.getLine());
 
 
+        }
 
 
         gameLoop.start();

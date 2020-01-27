@@ -2,7 +2,7 @@ package gameMaps;
 
 import gameObjects.Actor;
 import gameObjects.GameObject;
-import gameTiles.tile.Tile;
+import gameTiles.Tile;
 import javafx.scene.layout.Pane;
 
 import java.util.Collection;
@@ -27,7 +27,7 @@ public class Layers
         layersNumber++;
 
         Pane newLayer = new Pane();
-        newLayer.getChildren().addAll(tileList);
+       // newLayer.getChildren().addAll(tileList);
 
         layersMap.put(layersNumber,newLayer);
     }
